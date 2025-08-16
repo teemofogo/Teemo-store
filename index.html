@@ -3,303 +3,309 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Teemo Store - Skins Fortnite e Netflix</title>
-  <!-- Tailwind CSS via CDN -->
+  <title>Elite Gaming - Skins Fortnite e Contas Netflix</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <!-- Framer Motion -->
-  <script src="https://unpkg.com/framer-motion@10.16.4/dist/framer-motion.js"></script>
-  <!-- Lucide Icons -->
   <script src="https://unpkg.com/lucide@latest"></script>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
     body {
-      font-family: 'Inter', sans-serif;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
     }
     .gradient-text {
-      background-clip: text;
+      background: linear-gradient(90deg, #818cf8 0%, #60a5fa 100%);
       -webkit-background-clip: text;
+      background-clip: text;
       color: transparent;
+    }
+    .product-card {
+      transition: all 0.3s ease;
+      background: rgba(30, 41, 59, 0.7);
+      backdrop-filter: blur(10px);
+    }
+    .product-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 25px -5px rgba(99, 102, 241, 0.1), 0 10px 10px -5px rgba(99, 102, 241, 0.04);
     }
   </style>
 </head>
-<body class="min-h-screen bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 text-gray-50">
-  <div id="app">
-    <!-- Navbar -->
-    <header class="sticky top-0 z-40 border-b border-purple-900 bg-gray-900/90 backdrop-blur">
-      <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-3">
-        <div class="flex items-center gap-3">
-          <div class="grid h-10 w-10 place-items-center rounded-2xl bg-gradient-to-r from-purple-600 to-blue-600">
-            <i data-lucide="bot" class="h-6 w-6 text-white"></i>
-          </div>
-          <div>
-            <h1 class="text-lg font-bold leading-tight">Teemo Store</h1>
-            <p class="text-xs text-gray-400">Skins exclusivas e assinaturas premium pelos melhores preços</p>
-          </div>
+<body class="text-gray-100">
+  <!-- Navbar Premium -->
+  <header class="sticky top-0 z-50 border-b border-indigo-900/50 bg-slate-900/80 backdrop-blur-lg">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+      <div class="flex items-center gap-3">
+        <div class="grid h-10 w-10 place-items-center rounded-xl bg-gradient-to-r from-indigo-600 to-blue-500 shadow-lg">
+          <i data-lucide="gamepad-2" class="h-5 w-5 text-white"></i>
         </div>
-        <div class="hidden items-center gap-2 md:flex">
-          <a href="https://discord.gg/seu-servidor" target="_blank" rel="noreferrer">
-            <button class="inline-flex items-center justify-center rounded-xl bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 px-4 py-2 text-sm font-medium text-white">
-              Entrar no Discord <i data-lucide="external-link" class="ml-2 h-4 w-4"></i>
-            </button>
-          </a>
-        </div>
-      </div>
-    </header>
-
-    <!-- Hero Section -->
-    <section class="relative overflow-hidden">
-      <div class="mx-auto grid max-w-7xl grid-cols-1 items-center gap-8 px-4 py-16 md:grid-cols-2">
         <div>
-          <h2 class="text-4xl font-extrabold tracking-tight md:text-5xl">
-            <span class="gradient-text bg-gradient-to-r from-purple-400 to-blue-400">Skins exclusivas</span> e assinaturas premium
-          </h2>
-          <p class="mt-4 text-lg text-gray-300">
-            Compre com segurança no nosso servidor Discord. Entrega rápida, suporte dedicado e os melhores preços do mercado.
-          </p>
-          <div class="mt-8 flex flex-wrap gap-3">
-            <a href="https://discord.gg/seu-servidor" target="_blank" rel="noreferrer">
-              <button class="inline-flex items-center justify-center rounded-xl bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 px-6 py-3 text-sm font-medium text-white">
-                Comprar agora <i data-lucide="arrow-right" class="ml-2 h-5 w-5"></i>
-              </button>
-            </a>
-            <a href="https://discord.gg/seu-servidor" target="_blank" rel="noreferrer">
-              <button class="inline-flex items-center justify-center rounded-xl border border-gray-600 bg-transparent hover:bg-gray-800 px-6 py-3 text-sm font-medium text-white">
-                Falar com atendente
-              </button>
-            </a>
-          </div>
-          <div class="mt-6 flex items-center gap-2 text-sm text-gray-400">
-            <div class="flex items-center">
-              <i data-lucide="star" class="h-4 w-4 fill-yellow-400 text-yellow-400"></i> 
-              <i data-lucide="star" class="h-4 w-4 fill-yellow-400 text-yellow-400"></i>
-              <i data-lucide="star" class="h-4 w-4 fill-yellow-400 text-yellow-400"></i>
-              <i data-lucide="star" class="h-4 w-4 fill-yellow-400 text-yellow-400"></i>
-              <i data-lucide="star" class="h-4 w-4 fill-yellow-400 text-yellow-400"></i>
-              <span class="ml-1">5.0 (200+ avaliações)</span>
-            </div>
-            <span>•</span>
-            <span>Entrega em 2-10 minutos</span>
-          </div>
-        </div>
-        <div class="relative">
-          <div class="aspect-[16/10] overflow-hidden rounded-3xl shadow-2xl">
-            <img
-              src="https://images.unsplash.com/photo-1542751371-adc38448a05e?w=1600"
-              alt="Banner"
-              class="h-full w-full object-cover"
-            />
-            <div class="absolute inset-0 bg-gradient-to-t from-gray-900/80 via-gray-900/30 to-transparent"></div>
-            <div class="absolute bottom-6 left-6 right-6">
-              <div class="rounded-xl border border-gray-700 bg-gray-900/80 p-4 backdrop-blur">
-                <h3 class="font-bold">Por que comprar conosco?</h3>
-                <ul class="mt-2 space-y-1 text-sm text-gray-300">
-                  <li class="flex items-center gap-2"><i data-lucide="check" class="h-4 w-4 text-green-400"></i> Atendimento 24/7 via Discord</li>
-                  <li class="flex items-center gap-2"><i data-lucide="check" class="h-4 w-4 text-green-400"></i> Garantia de funcionamento</li>
-                  <li class="flex items-center gap-2"><i data-lucide="check" class="h-4 w-4 text-green-400"></i> Processo seguro e rápido</li>
-                </ul>
-              </div>
-            </div>
-          </div>
+          <h1 class="text-xl font-bold">Elite Gaming</h1>
+          <p class="text-xs text-indigo-300">Skins exclusivas e contas premium</p>
         </div>
       </div>
-    </section>
-
-    <!-- Produtos -->
-    <section class="mx-auto max-w-7xl px-4 py-12">
-      <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        <!-- Produto 1 -->
-        <div class="overflow-hidden rounded-2xl border border-gray-700 bg-gray-800/50 transition-all hover:border-purple-500/30 hover:shadow-lg hover:shadow-purple-500/10">
-          <div class="relative aspect-[4/3] w-full overflow-hidden rounded-t-2xl bg-gradient-to-br from-purple-700/30 to-blue-900/30">
-            <img src="https://images.unsplash.com/photo-1560253023-3ec5d502959f?w=1200" alt="Skin Lendária Fortnite" class="h-full w-full object-cover">
-          </div>
-          <div class="space-y-4 p-5">
-            <div class="flex items-start justify-between gap-3">
-              <div>
-                <h3 class="text-lg font-bold">Skin Lendária Fortnite</h3>
-                <div class="mt-2 flex flex-wrap gap-1">
-                  <span class="rounded-lg border border-gray-700 bg-gray-700/50 px-2 py-1 text-xs">Fortnite</span>
-                  <span class="rounded-lg border border-gray-700 bg-gray-700/50 px-2 py-1 text-xs">Skin</span>
-                  <span class="rounded-lg border border-gray-700 bg-gray-700/50 px-2 py-1 text-xs">Lendária</span>
-                </div>
-              </div>
-              <div class="text-right">
-                <div class="text-xl font-extrabold text-white">R$ 89,90</div>
-                <div class="text-xs text-gray-500">Disponíveis: 15</div>
-              </div>
-            </div>
-            <p class="text-sm text-gray-400">Skin rara de edição limitada com efeitos especiais.</p>
-            <div class="flex items-center gap-1 text-sm text-gray-400">
-              <div class="flex items-center">
-                <i data-lucide="star" class="h-4 w-4 fill-yellow-400 text-yellow-400"></i>
-                <span class="ml-1">4.9</span>
-              </div>
-              <span>•</span>
-              <span class="text-green-400">Disponível</span>
-            </div>
-            <div class="flex flex-wrap items-center gap-2">
-              <a href="https://discord.gg/seu-servidor" target="_blank" rel="noreferrer" class="flex-1">
-                <button class="inline-flex w-full items-center justify-center rounded-xl bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 px-4 py-2 text-sm font-medium text-white">
-                  <i data-lucide="shopping-cart" class="mr-2 h-4 w-4"></i> Comprar agora
-                </button>
-              </a>
-              <button class="inline-flex items-center justify-center rounded-xl border border-gray-700 bg-gray-800 px-4 py-2 text-sm font-medium text-white hover:bg-gray-700">
-                Detalhes
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Produto 2 -->
-        <div class="overflow-hidden rounded-2xl border border-gray-700 bg-gray-800/50 transition-all hover:border-purple-500/30 hover:shadow-lg hover:shadow-purple-500/10">
-          <div class="relative aspect-[4/3] w-full overflow-hidden rounded-t-2xl bg-gradient-to-br from-purple-700/30 to-blue-900/30">
-            <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?w=1200" alt="Pacote 3 Skins Fortnite" class="h-full w-full object-cover">
-          </div>
-          <div class="space-y-4 p-5">
-            <div class="flex items-start justify-between gap-3">
-              <div>
-                <h3 class="text-lg font-bold">Pacote 3 Skins Fortnite</h3>
-                <div class="mt-2 flex flex-wrap gap-1">
-                  <span class="rounded-lg border border-gray-700 bg-gray-700/50 px-2 py-1 text-xs">Fortnite</span>
-                  <span class="rounded-lg border border-gray-700 bg-gray-700/50 px-2 py-1 text-xs">Bundle</span>
-                  <span class="rounded-lg border border-gray-700 bg-gray-700/50 px-2 py-1 text-xs">Promoção</span>
-                </div>
-              </div>
-              <div class="text-right">
-                <div class="text-xl font-extrabold text-white">R$ 149,90</div>
-                <div class="text-xs text-gray-500">Disponíveis: 8</div>
-              </div>
-            </div>
-            <p class="text-sm text-gray-400">Combo econômico com skins selecionadas.</p>
-            <div class="flex items-center gap-1 text-sm text-gray-400">
-              <div class="flex items-center">
-                <i data-lucide="star" class="h-4 w-4 fill-yellow-400 text-yellow-400"></i>
-                <span class="ml-1">4.8</span>
-              </div>
-              <span>•</span>
-              <span class="text-green-400">Disponível</span>
-            </div>
-            <div class="flex flex-wrap items-center gap-2">
-              <a href="https://discord.gg/seu-servidor" target="_blank" rel="noreferrer" class="flex-1">
-                <button class="inline-flex w-full items-center justify-center rounded-xl bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 px-4 py-2 text-sm font-medium text-white">
-                  <i data-lucide="shopping-cart" class="mr-2 h-4 w-4"></i> Comprar agora
-                </button>
-              </a>
-              <button class="inline-flex items-center justify-center rounded-xl border border-gray-700 bg-gray-800 px-4 py-2 text-sm font-medium text-white hover:bg-gray-700">
-                Detalhes
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Produto 3 -->
-        <div class="overflow-hidden rounded-2xl border border-gray-700 bg-gray-800/50 transition-all hover:border-purple-500/30 hover:shadow-lg hover:shadow-purple-500/10">
-          <div class="relative aspect-[4/3] w-full overflow-hidden rounded-t-2xl bg-gradient-to-br from-purple-700/30 to-blue-900/30">
-            <img src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=1200" alt="Netflix Premium 6 meses" class="h-full w-full object-cover">
-          </div>
-          <div class="space-y-4 p-5">
-            <div class="flex items-start justify-between gap-3">
-              <div>
-                <h3 class="text-lg font-bold">Netflix Premium 6 meses</h3>
-                <div class="mt-2 flex flex-wrap gap-1">
-                  <span class="rounded-lg border border-gray-700 bg-gray-700/50 px-2 py-1 text-xs">Netflix</span>
-                  <span class="rounded-lg border border-gray-700 bg-gray-700/50 px-2 py-1 text-xs">Assinatura</span>
-                  <span class="rounded-lg border border-gray-700 bg-gray-700/50 px-2 py-1 text-xs">Streaming</span>
-                </div>
-              </div>
-              <div class="text-right">
-                <div class="text-xl font-extrabold text-white">R$ 199,90</div>
-                <div class="text-xs text-gray-500">Disponíveis: 25</div>
-              </div>
-            </div>
-            <p class="text-sm text-gray-400">Acesso completo a todos os conteúdos.</p>
-            <div class="flex items-center gap-1 text-sm text-gray-400">
-              <div class="flex items-center">
-                <i data-lucide="star" class="h-4 w-4 fill-yellow-400 text-yellow-400"></i>
-                <span class="ml-1">4.7</span>
-              </div>
-              <span>•</span>
-              <span class="text-green-400">Disponível</span>
-            </div>
-            <div class="flex flex-wrap items-center gap-2">
-              <a href="https://discord.gg/seu-servidor" target="_blank" rel="noreferrer" class="flex-1">
-                <button class="inline-flex w-full items-center justify-center rounded-xl bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 px-4 py-2 text-sm font-medium text-white">
-                  <i data-lucide="shopping-cart" class="mr-2 h-4 w-4"></i> Comprar agora
-                </button>
-              </a>
-              <button class="inline-flex items-center justify-center rounded-xl border border-gray-700 bg-gray-800 px-4 py-2 text-sm font-medium text-white hover:bg-gray-700">
-                Detalhes
-              </button>
-            </div>
-          </div>
-        </div>
+      <div class="flex items-center gap-4">
+        <a href="https://discord.gg/seu-servidor" target="_blank" class="flex items-center gap-2 rounded-xl bg-gradient-to-r from-indigo-600 to-blue-500 px-4 py-2 text-sm font-medium text-white shadow-lg hover:from-indigo-700 hover:to-blue-600 transition-all">
+          <i data-lucide="discord" class="h-4 w-4"></i>
+          Entrar no Discord
+        </a>
       </div>
-    </section>
+    </div>
+  </header>
 
-    <!-- Rodapé -->
-    <footer class="border-t border-gray-800 bg-gray-900/50">
-      <div class="mx-auto flex max-w-7xl flex-col items-start justify-between gap-8 px-4 py-12 md:flex-row md:items-center">
-        <div class="space-y-2">
-          <div class="flex items-center gap-2">
-            <div class="grid h-8 w-8 place-items-center rounded-xl bg-gradient-to-r from-purple-600 to-blue-600">
-              <i data-lucide="bot" class="h-5 w-5 text-white"></i>
-            </div>
-            <div class="text-lg font-bold">Teemo Store</div>
-          </div>
-          <div class="text-sm text-gray-500">Sua loja digital de confiança para itens de games e entretenimento</div>
-        </div>
-        
-        <div class="flex items-center gap-4 rounded-xl border border-gray-700 bg-gradient-to-r from-gray-800 to-gray-900/50 p-5">
-          <div class="rounded-lg bg-gray-800 p-3">
-            <i data-lucide="shield-check" class="h-6 w-6 text-purple-400"></i>
-          </div>
-          <div>
-            <div class="font-semibold text-white">Compra 100% Segura</div>
-            <div class="text-sm text-gray-400">
-              Processo verificado via Discord • Garantia de entrega • Suporte dedicado
-            </div>
-          </div>
-        </div>
-        
-        <div class="flex flex-wrap items-center gap-3">
-          <a href="https://discord.gg/seu-servidor" target="_blank" rel="noreferrer">
-            <button class="inline-flex items-center justify-center rounded-xl border border-gray-700 bg-gray-800 px-4 py-2 text-sm font-medium text-white hover:bg-gray-700">
-              Entrar no Discord
-            </button>
+  <!-- Hero Section -->
+  <section class="relative overflow-hidden">
+    <div class="mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 px-6 py-16 md:grid-cols-2">
+      <div class="relative z-10">
+        <h2 class="text-4xl font-bold leading-tight md:text-5xl">
+          <span class="gradient-text">Skins raras</span> e<br>contas premium<br>com entrega <span class="text-indigo-400">instantânea</span>
+        </h2>
+        <p class="mt-4 text-lg text-gray-300">
+          Acesso imediato após o pagamento. Suporte 24/7 via Discord e garantia de satisfação.
+        </p>
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a href="#products" class="rounded-xl bg-gradient-to-r from-indigo-600 to-blue-500 px-6 py-3 text-sm font-medium text-white shadow-lg hover:from-indigo-700 hover:to-blue-600 transition-all inline-flex items-center">
+            Ver produtos <i data-lucide="arrow-down" class="ml-2 h-4 w-4"></i>
           </a>
-          <button class="inline-flex items-center justify-center rounded-xl px-4 py-2 text-sm font-medium text-gray-400 hover:bg-gray-800 hover:text-white">
-            Termos
-          </button>
-          <button class="inline-flex items-center justify-center rounded-xl px-4 py-2 text-sm font-medium text-gray-400 hover:bg-gray-800 hover:text-white">
-            Privacidade
-          </button>
+          <a href="https://discord.gg/seu-servidor" target="_blank" class="inline-flex items-center gap-2 rounded-xl border border-indigo-600 bg-slate-800/50 px-6 py-3 text-sm font-medium text-white hover:bg-slate-800 transition-all">
+            <i data-lucide="headphones" class="h-4 w-4"></i>
+            Falar com atendente
+          </a>
+        </div>
+        <div class="mt-8 flex items-center gap-4">
+          <div class="flex items-center">
+            <i data-lucide="star" class="h-4 w-4 fill-yellow-400 text-yellow-400"></i>
+            <i data-lucide="star" class="h-4 w-4 fill-yellow-400 text-yellow-400"></i>
+            <i data-lucide="star" class="h-4 w-4 fill-yellow-400 text-yellow-400"></i>
+            <i data-lucide="star" class="h-4 w-4 fill-yellow-400 text-yellow-400"></i>
+            <i data-lucide="star" class="h-4 w-4 fill-yellow-400 text-yellow-400"></i>
+            <span class="ml-2 text-sm">4.9/5 (1.240 avaliações)</span>
+          </div>
         </div>
       </div>
-      <div class="mx-auto max-w-7xl px-4 py-4 text-center text-xs text-gray-600">
-        © 2023 Teemo Store. Todos os direitos reservados.
-        <br />
+      <div class="relative">
+        <div class="relative aspect-video overflow-hidden rounded-3xl shadow-2xl border border-indigo-900/50">
+          <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1600&q=80" alt="Skins Fortnite" class="h-full w-full object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/30 to-transparent"></div>
+          <div class="absolute bottom-6 left-6 right-6">
+            <div class="rounded-xl border border-indigo-900/30 bg-slate-900/80 p-4 backdrop-blur-lg">
+              <h3 class="font-bold text-indigo-100">Por que comprar conosco?</h3>
+              <ul class="mt-3 space-y-2 text-sm text-indigo-200">
+                <li class="flex items-center gap-2"><i data-lucide="zap" class="h-4 w-4 text-indigo-400"></i> Entrega em menos de 5 minutos</li>
+                <li class="flex items-center gap-2"><i data-lucide="shield-check" class="h-4 w-4 text-indigo-400"></i> Garantia de 7 dias</li>
+                <li class="flex items-center gap-2"><i data-lucide="headphones" class="h-4 w-4 text-indigo-400"></i> Suporte especializado</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Produtos -->
+  <section id="products" class="mx-auto max-w-7xl px-6 py-16">
+    <div class="mb-12 text-center">
+      <h2 class="text-3xl font-bold">Nossos <span class="gradient-text">Produtos Premium</span></h2>
+      <p class="mt-2 text-indigo-300">Selecione abaixo o que deseja adquirir</p>
+    </div>
+
+    <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+      <!-- Produto 1 -->
+      <div class="product-card rounded-2xl border border-indigo-900/30 p-5">
+        <div class="relative aspect-square overflow-hidden rounded-xl">
+          <img src="https://images.unsplash.com/photo-1560253023-3ec5d502959f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Skin Lendária Fortnite" class="h-full w-full object-cover">
+          <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-slate-900/90 to-transparent p-4">
+            <span class="rounded-full bg-indigo-600 px-3 py-1 text-xs font-medium">MAIS VENDIDO</span>
+          </div>
+        </div>
+        <div class="mt-5">
+          <div class="flex items-start justify-between">
+            <h3 class="text-xl font-bold">Skin Lendária Fortnite</h3>
+            <div class="text-right">
+              <div class="text-2xl font-bold text-indigo-400">R$ 89,90</div>
+              <div class="text-xs text-indigo-300">10 em estoque</div>
+            </div>
+          </div>
+          <p class="mt-2 text-sm text-gray-400">Skin rara de edição limitada com efeitos especiais exclusivos.</p>
+          <div class="mt-4 flex items-center justify-between">
+            <div class="flex items-center gap-1">
+              <i data-lucide="star" class="h-4 w-4 fill-yellow-400 text-yellow-400"></i>
+              <span class="text-sm font-medium">4.9</span>
+            </div>
+            <a href="https://discord.gg/seu-servidor" target="_blank" class="rounded-xl bg-gradient-to-r from-indigo-600 to-blue-500 px-4 py-2 text-sm font-medium text-white hover:from-indigo-700 hover:to-blue-600 transition-all">
+              Comprar agora
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Produto 2 -->
+      <div class="product-card rounded-2xl border border-indigo-900/30 p-5">
+        <div class="relative aspect-square overflow-hidden rounded-xl">
+          <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Pacote 3 Skins" class="h-full w-full object-cover">
+        </div>
+        <div class="mt-5">
+          <div class="flex items-start justify-between">
+            <h3 class="text-xl font-bold">Pacote 3 Skins Fortnite</h3>
+            <div class="text-right">
+              <div class="text-2xl font-bold text-indigo-400">R$ 149,90</div>
+              <div class="text-xs text-indigo-300">5 em estoque</div>
+            </div>
+          </div>
+          <p class="mt-2 text-sm text-gray-400">Combo econômico com 3 skins lendárias de sua escolha.</p>
+          <div class="mt-4 flex items-center justify-between">
+            <div class="flex items-center gap-1">
+              <i data-lucide="star" class="h-4 w-4 fill-yellow-400 text-yellow-400"></i>
+              <span class="text-sm font-medium">4.8</span>
+            </div>
+            <a href="https://discord.gg/seu-servidor" target="_blank" class="rounded-xl bg-gradient-to-r from-indigo-600 to-blue-500 px-4 py-2 text-sm font-medium text-white hover:from-indigo-700 hover:to-blue-600 transition-all">
+              Comprar agora
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Produto 3 -->
+      <div class="product-card rounded-2xl border border-indigo-900/30 p-5">
+        <div class="relative aspect-square overflow-hidden rounded-xl">
+          <img src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Netflix Premium" class="h-full w-full object-cover">
+          <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-slate-900/90 to-transparent p-4">
+            <span class="rounded-full bg-green-600 px-3 py-1 text-xs font-medium">NOVO</span>
+          </div>
+        </div>
+        <div class="mt-5">
+          <div class="flex items-start justify-between">
+            <h3 class="text-xl font-bold">Netflix Premium 6 meses</h3>
+            <div class="text-right">
+              <div class="text-2xl font-bold text-indigo-400">R$ 199,90</div>
+              <div class="text-xs text-indigo-300">15 em estoque</div>
+            </div>
+          </div>
+          <p class="mt-2 text-sm text-gray-400">Acesso completo a todos os conteúdos em Ultra HD.</p>
+          <div class="mt-4 flex items-center justify-between">
+            <div class="flex items-center gap-1">
+              <i data-lucide="star" class="h-4 w-4 fill-yellow-400 text-yellow-400"></i>
+              <span class="text-sm font-medium">4.7</span>
+            </div>
+            <a href="https://discord.gg/seu-servidor" target="_blank" class="rounded-xl bg-gradient-to-r from-indigo-600 to-blue-500 px-4 py-2 text-sm font-medium text-white hover:from-indigo-700 hover:to-blue-600 transition-all">
+              Comprar agora
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Produto 4 -->
+      <div class="product-card rounded-2xl border border-indigo-900/30 p-5">
+        <div class="relative aspect-square overflow-hidden rounded-xl">
+          <img src="https://images.unsplash.com/photo-1638895736773-9fa0e06d36a9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Picareta Exclusiva" class="h-full w-full object-cover">
+        </div>
+        <div class="mt-5">
+          <div class="flex items-start justify-between">
+            <h3 class="text-xl font-bold">Picareta Exclusiva</h3>
+            <div class="text-right">
+              <div class="text-2xl font-bold text-indigo-400">R$ 59,90</div>
+              <div class="text-xs text-indigo-300">8 em estoque</div>
+            </div>
+          </div>
+          <p class="mt-2 text-sm text-gray-400">Picareta animada com efeitos especiais raros.</p>
+          <div class="mt-4 flex items-center justify-between">
+            <div class="flex items-center gap-1">
+              <i data-lucide="star" class="h-4 w-4 fill-yellow-400 text-yellow-400"></i>
+              <span class="text-sm font-medium">4.9</span>
+            </div>
+            <a href="https://discord.gg/seu-servidor" target="_blank" class="rounded-xl bg-gradient-to-r from-indigo-600 to-blue-500 px-4 py-2 text-sm font-medium text-white hover:from-indigo-700 hover:to-blue-600 transition-all">
+              Comprar agora
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Produto 5 -->
+      <div class="product-card rounded-2xl border border-indigo-900/30 p-5">
+        <div class="relative aspect-square overflow-hidden rounded-xl">
+          <img src="https://images.unsplash.com/photo-1636819488537-a9b1ffb315ce?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Emote Raro" class="h-full w-full object-cover">
+        </div>
+        <div class="mt-5">
+          <div class="flex items-start justify-between">
+            <h3 class="text-xl font-bold">Emote Raro Fortnite</h3>
+            <div class="text-right">
+              <div class="text-2xl font-bold text-indigo-400">R$ 39,90</div>
+              <div class="text-xs text-indigo-300">20 em estoque</div>
+            </div>
+          </div>
+          <p class="mt-2 text-sm text-gray-400">Danças e gestos exclusivos para seu personagem.</p>
+          <div class="mt-4 flex items-center justify-between">
+            <div class="flex items-center gap-1">
+              <i data-lucide="star" class="h-4 w-4 fill-yellow-400 text-yellow-400"></i>
+              <span class="text-sm font-medium">4.6</span>
+            </div>
+            <a href="https://discord.gg/seu-servidor" target="_blank" class="rounded-xl bg-gradient-to-r from-indigo-600 to-blue-500 px-4 py-2 text-sm font-medium text-white hover:from-indigo-700 hover:to-blue-600 transition-all">
+              Comprar agora
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Produto 6 -->
+      <div class="product-card rounded-2xl border border-indigo-900/30 p-5">
+        <div class="relative aspect-square overflow-hidden rounded-xl">
+          <img src="https://images.unsplash.com/photo-1522869635100-9f4c5e86aa37?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Netflix 1 ano" class="h-full w-full object-cover">
+          <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-slate-900/90 to-transparent p-4">
+            <span class="rounded-full bg-amber-600 px-3 py-1 text-xs font-medium">OFERTA</span>
+          </div>
+        </div>
+        <div class="mt-5">
+          <div class="flex items-start justify-between">
+            <h3 class="text-xl font-bold">Netflix Premium 1 ano</h3>
+            <div class="text-right">
+              <div class="text-2xl font-bold text-indigo-400">R$ 349,90</div>
+              <div class="text-xs text-indigo-300">7 em estoque</div>
+            </div>
+          </div>
+          <p class="mt-2 text-sm text-gray-400">Economize com assinatura anual premium.</p>
+          <div class="mt-4 flex items-center justify-between">
+            <div class="flex items-center gap-1">
+              <i data-lucide="star" class="h-4 w-4 fill-yellow-400 text-yellow-400"></i>
+              <span class="text-sm font-medium">4.8</span>
+            </div>
+            <a href="https://discord.gg/seu-servidor" target="_blank" class="rounded-xl bg-gradient-to-r from-indigo-600 to-blue-500 px-4 py-2 text-sm font-medium text-white hover:from-indigo-700 hover:to-blue-600 transition-all">
+              Comprar agora
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="border-t border-indigo-900/30 bg-slate-900/50">
+    <div class="mx-auto max-w-7xl px-6 py-12">
+      <div class="flex flex-col items-center justify-between gap-8 md:flex-row">
+        <div class="flex items-center gap-3">
+          <div class="grid h-10 w-10 place-items-center rounded-xl bg-gradient-to-r from-indigo-600 to-blue-500">
+            <i data-lucide="gamepad-2" class="h-5 w-5 text-white"></i>
+          </div>
+          <div class="text-lg font-bold">Elite Gaming</div>
+        </div>
+        <div class="flex items-center gap-4">
+          <a href="https://discord.gg/seu-servidor" target="_blank" class="inline-flex items-center gap-2 rounded-xl border border-indigo-600 bg-slate-800/50 px-4 py-2 text-sm font-medium text-white hover:bg-slate-800 transition-all">
+            <i data-lucide="headphones" class="h-4 w-4"></i>
+            Suporte
+          </a>
+          <a href="https://discord.gg/seu-servidor" target="_blank" class="inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-indigo-600 to-blue-500 px-4 py-2 text-sm font-medium text-white hover:from-indigo-700 hover:to-blue-600 transition-all">
+            <i data-lucide="discord" class="h-4 w-4"></i>
+            Comprar no Discord
+          </a>
+        </div>
+      </div>
+      <div class="mt-12 text-center text-sm text-indigo-300">
+        © 2023 Elite Gaming. Todos os direitos reservados.<br>
         Não afiliado à Epic Games, Fortnite, Netflix ou outras marcas registradas.
       </div>
-    </footer>
-  </div>
+    </div>
+  </footer>
 
   <script>
     // Inicializa os ícones Lucide
     lucide.createIcons();
-    
-    // Função para formatar preços em BRL
-    function brl(value) {
-      return value.toLocaleString('pt-BR', {
-        style: 'currency',
-        currency: 'BRL',
-        minimumFractionDigits: 2
-      });
-    }
-    
-    // Atualiza todos os elementos com data-price para o formato BRL
-    document.querySelectorAll('[data-price]').forEach(el => {
-      const price = parseFloat(el.getAttribute('data-price'));
-      el.textContent = brl(price);
-    });
   </script>
 </body>
 </html>
